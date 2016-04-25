@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script>
+			var date = new Date();
+			date.setDate(1);
+			var weekday = new Array(7);
+			weekday[0] = "星期日";
+			weekday[1] = "星期一";
+			weekday[2] = "星期二";
+			weekday[3] = "星期三";
+			weekday[4] = "星期四";
+			weekday[5] = "星期五";
+			weekday[6] = "星期六";
+			alert("本月第一天是 " + weekday[date.getDay()]);
+			
+			//本月1号的星期
+			var mm = date.setMonth(date.getMonth() + 1);
+			console.log(mm)
+			
+			
+			var lastDate = new Date(date - 3600000 * 24);
+			console.log(lastDate)
+			
+			alert("本月最后一天是 " + lastDate.getDate());
+		</script>
+	</body>
+
+</html>
